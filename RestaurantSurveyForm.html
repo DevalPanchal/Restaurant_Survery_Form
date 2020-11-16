@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Survery Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div> 
+        <img class="bg-image" src="https://basilmint.ca/wp-content/uploads/2020/01/img_3215-2048x1536.jpg" >
+    </div>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <h1 id="title">Restaurant Survey Form</h1>
+        <p id="description">Tell us about your experience at this restaurant</p>
+    </div>
+    
+    <div class="bg-info">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+    
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required><br>
+    
+            <label for="age" id="age-label">Age (Optional)</label><br>
+            <input type="number" id="number" name="number" placeholder="Enter you age" min="0" max="99"><br>
+    
+            <label for="number" id="number-label">Number</label><br>
+            <input type="number" id="number" name="number" placeholder="Enter your number" required><br>
+    
+            <label for="Experience">Give us your experience at this restaurant</label><br>
+            <select id="dropdown">
+                <option value="" disabled>Give your experience for this restaurant</option>
+                <option value="Awesome" selected>Awesome</option>
+                <option value="Good">Good</option>
+                <option value="Satisfactory">Satisfactory</option>
+                <option value="Needs Improvement">Needs Improvement</option>
+            </select>
+            
+            <p id="recommend">Would you recommend this restaurant to your friends and family:</p>
+            <div>
+                <input type="radio" id="recommend" name="recommend" value="Definitely">
+                <label for="Definitely" id="select">Definitely</label><br>
+                <input type="radio" id="recommend" name="recommend" value="Maybe">
+                <label for="Maybe" id="select">Maybe</label><br>
+                <input type="radio" id="recommend" name="recommend" value="No">
+                <label for="No" id="select">No</label><br>
+            </div>
+    
+            <p id="tips">What are some things that our restaurant could improve upon:</p>
+            <div>
+                <input type="checkbox" id="tips" name="tips" value="More quantity">
+                <label for="More quantity" id="select">More food quantity</label><br>
+                <input type="checkbox" id="tips" name="tips" value="Better service">
+                <label for="Better service" id="select">Better staff service</label><br>
+                <input type="checkbox" id="tips" name="tips" value="More seating">
+                <label for="More seating" id="select">More seating</label><br>
+                <input type="checkbox" id="tips" name="tips" value="More parking">
+                <label for="More parking" id="select">More parking</label><br>
+                <input type="checkbox" id="tips" name="tips" value="prices">
+                <label for="prices" id="select">Lower prices</label><br>
+                <input type="checkbox" id="tips" name="tips" value="Website">
+                <label for="Website" id="select">Restaurant Website</label><br>
+                <input type="checkbox" id="tips" name="tips" value="Other">
+                <label for="other" id="select">Other</label>
+            </div>
+    
+            <p id="tips">Any Suggestions or comments on our restaurant?</p>
+            <textarea name="feedback" rows="10" cols="30" placeholder="Enter your feedback here..." id="feedback"></textarea>
+    
+            <button id="submit" value="Submit">Submit</button>
+        </form>
+    
+    </div>
+</body>
+</html>
